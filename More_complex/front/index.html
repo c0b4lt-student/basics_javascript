@@ -1,14 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Les fonctions JavaScript</title>
+    <title>Mon site</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,100,300" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="wrapper">
+    <header class="main-background-color text-center p-20">
+        <h1 class="text-bold">Mon site</h1>
+    </header>
+    <nav class="p-10 mb-10">
+        <ul>
+            <li class="m-10"><a href="#" class="nav-link">Ma présentation</a></li>
+            <li class="m-10"><a href="#" class="nav-link">Mes projets</a></li>
+            <li class="m-10"><a href="#" class="nav-link">Me contacter</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="p-20">
+            <h2 class="text-bold">Tout savoir sur moi</h2>
+            <article class="p-20">
+                <h3 class="text-italic">Mon site personnel</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur fringilla nisi neque, non commodo diam tincidunt quis.
+                    Donec a nibh sed ipsum fermentum vehicula vel ac lectus.
+                    Nulla congue feugiat tellus, ut imperdiet enim elementum a.
+                    Sed sed odio eu nibh gravida ultrices.
+                </p>
+            </article>
+            <article class="p-20">
+                <h3 class="text-italic">Mon parcours</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur fringilla nisi neque, non commodo diam tincidunt quis.
+                    Donec a nibh sed ipsum fermentum vehicula vel ac lectus.
+                    Nulla congue feugiat tellus, ut imperdiet enim elementum a.
+                    Sed sed odio eu nibh gravida ultrices.
+                </p>
+            </article>
+        </section>
+        <aside>
+            <article class="p-20">
+                <h2 class="text-bold">Qui suis-je ?</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <h3 class="text-italic">Mes passions</h3>
+                <ul>
+                    <li>Les chats</li>
+                    <li>Le sport</li>
+                    <li>La musique</li>
+                </ul>
+            </article>
+            <article class="p-20">
+                <h2 class="text-bold">Personnaliser votre expérience</h2>
+                <form action="">
+                    <div class="form-block p-10">
+                        <label for="preferredBackgroundColor" class="text-bold">Personnaliser la couleur de fond</label>
+                        <input type="color" id="preferredBackgroundColor" name="preferredBackgroundColor">
+                    </div>
+                    <div class="form-block p-10">
+                        <label for="preferredFontFamily" class="text-bold">Personnaliser la police utilisée</label>
+                        <select name="preferredFontFamily" id="preferredFontFamily">
+                            <option value="Arial">Arial</option>
+                            <option value="Lato">Lato</option>
+                            <option value="Comic Sans MS">Comic Sans MS</option>
+                        </select>
+                    </div>
+                    <div class="form-block p-10">
+                        <button id="savePreferredValues">Enregistrer mes préférences</button>
+                    </div>
+                </form>
 
-<script src="../back/Employees.js"></script>
+            </article>
+        </aside>
+    </main>
+    <footer class="main-background-color text-italic text-center p-10 mt-20">
+        <div>
+            <p>Suivez moi sur les réseaux sociaux !</p>
+            <div>
+                <img src="http://placehold.it/50x50/82c3c5/f6f2eb" alt="logo1">
+                <img src="http://placehold.it/50x50/82c3c5/f6f2eb" alt="logo2">
+                <img src="http://placehold.it/50x50/82c3c5/f6f2eb" alt="logo3">
+            </div>
+        </div>
+        <p>Tous droits réservés</p>
+    </footer>
+</div>
+<script src="../back/debogage.js"></script>
 </body>
 </html>

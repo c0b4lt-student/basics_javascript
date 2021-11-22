@@ -1,11 +1,82 @@
 body {
     font-family: 'Lato', sans-serif;
+    margin: 0;
+    font-size: 14px;
 }
 
 .wrapper {
-    display: flex;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    height: 100vh;
 }
 
-.product {
-    margin: 2rem;
+h1, h2 {
+    font-weight: bold;
+    margin: 0;
+}
+
+header, footer {
+    color: white;
+}
+
+nav {
+    background-color: lightgrey;
+}
+
+nav li {
+    display: inline;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+main > aside {
+    min-width: 300px;
+}
+
+input, select, button {
+    display: block;
+}
+
+.main-background-color {
+    background-color: #607D8B;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.m-10 {
+    margin: 10px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.m-10 {
+    margin: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
 }
